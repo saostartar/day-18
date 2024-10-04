@@ -18,4 +18,10 @@ class Product extends Model
     {
         return $this->hasMany(Purchase::class);
     }
+
+    protected $fillable = [
+        'name',
+        'price',
+        'stock',
+    ];
 }

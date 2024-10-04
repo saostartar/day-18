@@ -7,6 +7,7 @@ use App\Models\Product;
 use App\Models\Supplier;
 use Illuminate\Http\Request;
 
+
 class PurchaseController extends Controller
 {
     public function index()

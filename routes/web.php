@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::resource('sales', SaleController::class);
     Route::resource('purchases', PurchaseController::class);
+    Route::resource('products', ProductController::class);
 });
 
 Route::middleware(['auth', 'role:sales_manager'])->group(function () {
